@@ -64,6 +64,7 @@ import asyncio
 import edge_tts
 import pygame
 from groq import Groq
+from vision import describe_screen, describe_webcam
 
 # ---------- Config ----------
 
@@ -492,6 +493,15 @@ def handle_command(command):
 
     if "weather" in command:
         speak(get_weather()); return
+
+    if "news" in command:
+        speak(get_news(command)); return
+
+    if "screen" in command and ("what" in command or "describe" in command or "see" in command):
+        speak("Let me take a look."); speak(describe_screen()); return
+
+    if "webcam" in command or "camera" in command:
+        speak("Let me take a look."); speak(describe_webcam()); return
 
     if "time" in command:
         speak(get_time()); return

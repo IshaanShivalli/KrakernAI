@@ -1,0 +1,12 @@
+groq
+python-dotenv
+requests
+SpeechRecognition
+pyaudio
+edge-tts
+pygame
+feedparser
+pyautogui
+opencv-python
+google-auth-oauthlib
+google-api-python-client
