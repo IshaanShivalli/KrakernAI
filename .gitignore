@@ -1,0 +1,65 @@
+# Python
+
+**pycache**/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+
+venv/
+env/
+.venv/
+
+# IDE
+
+.vscode/
+.idea/
+
+# OS
+
+.DS_Store
+Thumbs.db
+
+# Logs
+
+*.log
+
+# Environment
+
+.env
+
+# Python build
+
+build/
+dist/
+*.egg-info/
+
+# Cache
+
+.pytest_cache/
+.mypy_cache/
+
+# Audio
+
+*.wav
+
+# Temporary files
+
+temp/
+tmp/
+
+# SQLite
+
+*.db
+
+# Bytecode
+
+*.pyo
+
+# HuggingFace
+
+.cache/
+
+# Secrets
+
+config.local.py
